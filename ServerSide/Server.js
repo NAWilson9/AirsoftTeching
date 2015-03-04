@@ -1,5 +1,7 @@
 /**
  * Created by Nick on 3/3/2015.
+ *
+ * Need to add error handling!
  */
 //Link dependencies
 var express = require('express');
@@ -18,3 +20,6 @@ server.listen(1337, function() {
 });
 
 //AJAX Calls
+
+
+
