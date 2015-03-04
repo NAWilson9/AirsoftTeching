@@ -13,7 +13,7 @@ server.use(bodyParser.json());
 server.use(express.static('../ClientSide/'));
 
 //Start server
-server.listen(1337, function(err) {
+server.listen(1337, function() {
     console.log('AirsoftTeching server running on port ' + 1337);
 });
 
