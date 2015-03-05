@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Airsoft Teching</title>
     <style>
         li {
             display: inline;
@@ -16,18 +16,19 @@
             bottom:0;
         }
     </style>
+    <script src="Buttons.js"></script>
 </head>
-<header>
-    <ul>
-        <li>Page 1</li>
-        <li>Page 2</li>
-        <li>Page 3</li>
-    </ul>
-</header>
-<body>
-    Knob
+<body onload="getNewPage('Home')">
+    <header>
+        <ul>
+            <li onclick="getNewPage('Home')">Home Page</li>
+            <li onclick="getNewPage('Battery')">Page 2</li>
+            <li>Page 3</li>
+        </ul>
+    </header>
+    <div id="body">></div>
+    <footer>
+        <p>Copyright 2015 - Created by Alec Poczatek and Nick Wilson</p>
+    </footer>
 </body>
-<footer>
-    <p>Copyright 2015 - Created by Alec Poczatek and Nick Wilson</p>
-</footer>
 </html>

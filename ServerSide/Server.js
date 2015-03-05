@@ -6,6 +6,7 @@
 //Link dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
+var fs = require('fs');
 
 //Create server
 var server = express();
@@ -19,7 +20,17 @@ server.listen(1337, function() {
     console.log('AirsoftTeching server running on port ' + 1337);
 });
 
-//AJAX Calls
+/*
+AJAX Calls
+ */
 
+//Get's the main page
+server.get('/getHomePage', function(req, res) {
+    var responseHTML =  fs.readFileSync('./Pages/HomePage.html', 'utf8');
+    res.send(responseHTML);
+});
 
-
+server.get('/getBatteryPage', function(req, res) {
+    var responseHTML =  fs.readFileSync('./Pages/BatteryPage.html', 'utf8');
+    res.send(responseHTML);
+});
