@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Airsoft Teching</title>
-    <style>
-        li {
-            display: inline;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
+    <head lang="en">
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Airsoft, Teching, Tech, Diagnostic, Tools"> <!-- These are keywords used by search engines -->
+        <meta name="description" content="A one stop location for all airsoft teching and repair"> <!-- This is a description of the web page -->
+        <meta name="application-name" content="Airsoft Teching"> <!-- Specifies the name of the Web application that the page represents -->
+        <meta name="author" content="Nick Wilson, Alec Poczatek"> <!-- Authors -->
+        <title>Airsoft Teching</title> <!-- Page title. What shows in tabs and bookmarks -->
 
-        footer {
-            position:absolute;
-            bottom:0;
-        }
-    </style>
-    <script src="Buttons.js"></script>
-</head>
-<body onload="getNewPage('Home')">
-    <header>
-        <ul>
-            <li onclick="getNewPage('Home')">Home Page</li>
-            <li onclick="getNewPage('Battery')">Page 2</li>
-            <li>Page 3</li>
-        </ul>
-    </header>
-    <div id="body">></div>
-    <footer>
-        <p>Copyright 2015 - Created by Alec Poczatek and Nick Wilson</p>
-    </footer>
-</body>
+        <!-- Other files -->
+        <link rel="stylesheet" type="text/css" href="Main.css">
+        <script type="text/javascript" src="Buttons.js"></script>
+
+        <!-- If you don't have javascript enabled like a knob -->
+        <noscript>Your browser does not support JavaScript ya knob!</noscript>
+    </head>
+    <body onload="getNewPage('Home')">
+        <header id="header">
+            <ul>
+                <a href="javascript:void(0)" onclick="getNewPage('Home')" title="Home">Home</a>
+                <a href="javascript:void(0)" onclick="getNewPage('Battery')" title="Battery Info">Battery Info</a>
+                <a href="javascript:void(0)" onclick="getNewPage('Test')" title="ERROR DON'T CLICK">Page 3</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="REALLY, DON'T CLICK THIS ONE">Page 4</a>
+            </ul>
+        </header>
+        <div id="body"></div>
+        <footer id="footer">
+            <p>Copyright 2015 - Created by Alec Poczatek and Nick Wilson</p>
+        </footer>
+    </body>
 </html>
