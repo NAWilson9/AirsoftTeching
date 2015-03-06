@@ -34,3 +34,8 @@ server.get('/getBatteryPage', function(req, res) {
     var responseHTML =  fs.readFileSync('./Pages/BatteryPage.html', 'utf8');
     res.send(responseHTML);
 });
+
+server.get('/getCalculatorPage', function(req, res) {
+    var responseHTML =  fs.readFileSync('./Pages/CalculatorPage.html', 'utf8');
+    res.send(responseHTML);
+});
