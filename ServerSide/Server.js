@@ -39,3 +39,8 @@ server.get('/getCalculatorPage', function(req, res) {
     var responseHTML =  fs.readFileSync('./Pages/CalculatorPage.html', 'utf8');
     res.send(responseHTML);
 });
+
+server.get('/getSubmitYourDataPage', function(reg, res) {
+    var responseHTML = fs.readFileSync('./Pages/SubmitYourDataPage.html', 'utf8');
+    res.send(responseHTML);
+});
