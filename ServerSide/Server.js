@@ -6,7 +6,7 @@
 //Link dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
-var fs = require('fs');
+var fs = require('fs'); //used for node file system interaction.
 
 //Create server
 var server = express();
