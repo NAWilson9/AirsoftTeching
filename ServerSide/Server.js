@@ -12,8 +12,9 @@ var fs = require('fs'); //used for node file system interaction.
 var server = express();
 
 //Server Setup
-server.use(bodyParser.json());
-server.use(express.static('../ClientSide/'));
+server.use(bodyParser.json()); //any HTTP request with a body is parsed in JSON.
+server.use(express.static('../ClientSide/')); //set the directory to be static to the set location
+
 
 //Start server
 server.listen(1337, function() {
